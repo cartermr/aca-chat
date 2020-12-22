@@ -1,0 +1,24 @@
+{
+  "name": "aca-chat",
+  "version": "1.0.0",
+  "description": "A messaging system is one of the most popular types of software there is. Skype, text, gtalk, slack, rocket chat. Let's build a web browser based chat app. Browsers cannot talk to each other directly. They need a server to be the middle man.\r ## Setup\r * fork, clone\r * npm init\r * npm i express body-parser",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cartermr/aca-chat.git"
+  },
+  "author": "Matt Carter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cartermr/aca-chat/issues"
+  },
+  "homepage": "https://github.com/cartermr/aca-chat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
