@@ -18,9 +18,31 @@ body {
     flex-direction: column;
 }
 
+.send-area > button {
+    width: 50%;
+    align-self: center;
+    margin-top: 10px;
+}
+
 .message-area {
     background-color: white;
     width: 75%;
     height: 100%;
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.myMessage {
+    align-self: flex-start;
+    background-color: lightskyblue;
+    margin: 5px;
+    padding: 5px;
+}
+
+.theirMessage {
+    align-self: flex-end;
+    background-color:lightgreen;
+    margin: 5px;
+    padding: 5px;
 }

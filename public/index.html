@@ -9,10 +9,12 @@
 </head>
 <body>
     <section class='send-area'>
-        <input type="text" name="message" id="message">
-        <button>Send Message</button>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button onclick="sendMessage()">Send Message</button>
     </section>
-    <section class='message-area'></section>
+    <section class='message-area' id='messageArea'>
+        <!-- messages display here -->
+    </section>
     <script src="chat.js"></script>   
 </body>
 </html>
