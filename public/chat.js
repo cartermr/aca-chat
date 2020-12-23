@@ -1,7 +1,7 @@
 let clientID = 0
 
 window.onload = () => {
-    fetch('http://localhost:8080/clients', {
+    fetch('http://192.168.0.150:8080/clients', {
         method: 'POST',
     })
         .then(res => res.json())
@@ -20,7 +20,7 @@ const sendMessage = () => {
         "text": messageText
     }
 
-    fetch('http://localhost:8080/messages', {
+    fetch('http://192.168.0.150:8080/messages', {
         method: 'POST',
         body: JSON.stringify(newMessage),
         headers: {
@@ -36,7 +36,7 @@ const sendMessage = () => {
 const loadMessages = () => {
     let messages = []
 
-    fetch('http://localhost:8080/messages')
+    fetch('http://192.168.0.150:8080/messages')
         .then(res => res.json())
         .then(data => {
             messages = data

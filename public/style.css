@@ -1,34 +1,35 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    height: 90vh;
-    width: 90vw;
+    margin: 1vh 1vw;
     background-color: lightgrey;
-    margin: 50px auto;
     display: flex;
 }
 
 .send-area {
-    width: 25%;
-    height: 100%;
+    width: 25vw;
     display: flex;
     flex-direction: column;
 }
 
 .send-area > button {
-    width: 50%;
     align-self: center;
     margin-top: 10px;
 }
 
+.send-area > textarea {
+    padding: .5vw .5vh;
+}
+
 .message-area {
     background-color: white;
-    width: 75%;
-    height: 100%;
-    margin-left: 10px;
+    width: 75vw;
+    height: 90vh;
+    margin-left: 1vw;
     display: flex;
     flex-direction: column;
 }
@@ -45,4 +46,20 @@ body {
     background-color:lightgreen;
     margin: 5px;
     padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        flex-wrap: wrap;
+    }
+
+    .send-area {
+        width: 100%;
+    }
+
+    .message-area {
+        margin-left: 0;
+        margin-top: 1vh;
+        width: 100%;
+    }
 }
